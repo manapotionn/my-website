@@ -1,0 +1,23 @@
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.title-bar {
+  order: 1;
+  background: #8ce975;
+  padding: 5px;
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 15px;
+}
+
+.content-container {
+  order: 2;
+  background: #ffffff;
+  height: 100%;
+  margin-bottom: 15px;
+}
