@@ -1,9 +1,16 @@
 import React from 'react';
 import '../css/File.css';
 
-function File({title, setTitle}){
+function File({title, setTitle, selected}){
+    
+    
     return (
-        <div onClick={() => setTitle(title)}>{title}</div>
+        <div 
+            className={selected ? "file-container selected" : "file-container"}
+            onClick={() => setTitle(title)}
+        >
+            {title}
+        </div>
     )
 
 }

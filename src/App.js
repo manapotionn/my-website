@@ -42,9 +42,9 @@ function App() {
             title="files"
             content = {
               <div>
-                <File title="about.txt" setTitle={setTitle}/>
-                <File title="experience.txt" setTitle={setTitle}/>
-                <File title="skills.txt" setTitle={setTitle}/>
+                <File title="about.txt" setTitle={setTitle} selected={title == 'about.txt'}/>
+                <File title="experience.txt" setTitle={setTitle} selected={title == 'experience.txt'}/>
+                <File title="skills.txt" setTitle={setTitle} selected={title == 'skills.txt'}/>
               </div>
             }
           />
