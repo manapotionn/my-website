@@ -1,8 +1,9 @@
 .file-container {
   padding-left: 5%;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .selected {
-  background-color: aquamarine;
+  background-color: #c1f0b6;
 }
