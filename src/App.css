@@ -34,3 +34,7 @@ body {
   flex: 1;
   order: 2;
 }
+
+.full-screen {
+  flex: 1;
+}

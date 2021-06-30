@@ -1,0 +1,14 @@
+.flexbox-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox-panel-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.flexbox-panel-right {
+  flex: 2;
+  min-width: 0;
+}
