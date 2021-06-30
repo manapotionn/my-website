@@ -25,7 +25,7 @@ function getLineData() {
     labels: Object.keys(betsData),
     datasets: [
       {
-        label: "Net Change in Unicorns",
+        label: "Daily Change in Unicorns",
         data: netChangeData,
         fill: false,
         backgroundColor: "rgb(255, 99, 132)",
@@ -58,7 +58,7 @@ function getPieData() {
   }
 
   const data = {
-    labels: ["Win", "Lose"],
+    labels: ["Correct", "Wrong"],
     datasets: [
       {
         label: "Win Ratio Total",
@@ -102,6 +102,39 @@ function getStackedBarData() {
         label: "# of Wrong Predictions",
         data: loseArray,
         backgroundColor: "rgba(255, 99, 132, 0.2)",
+      },
+    ],
+  };
+
+  return data;
+}
+
+function getNetChange() {
+  const netChangeData = [];
+  for (const [matchday, games] of Object.entries(betsData)) {
+    let acc = 0;
+    for (let i = 0; i < games.length; i++) {
+      acc += betsData[matchday][i].earnings - betsData[matchday][i].wager;
+    }
+    netChangeData.push(acc);
+  }
+
+  const colors = [];
+  for (var i = 0; i < netChangeData.length; i++) {
+    if (netChangeData[i] >= 0) {
+      colors.push("rgba(75, 192, 192, 0.2)");
+    } else {
+      colors.push("rgba(255, 99, 132, 0.2)");
+    }
+  }
+
+  const data = {
+    labels: Object.keys(betsData),
+    datasets: [
+      {
+        label: "Daily Change",
+        data: netChangeData,
+        backgroundColor: colors,
       },
     ],
   };
@@ -154,6 +187,7 @@ function EuroBets() {
         </div>
       </div>
       <Line data={getLineData()} options={lineOptions} />
+      <Bar data={getNetChange()} options={barOptions} />
     </div>
   );
 }

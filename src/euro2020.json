@@ -304,14 +304,14 @@
         "bet": "Croatia",
         "wager": 30,
         "earnings": 0,
-        "matchThread": "<link>"
+        "matchThread": "https://www.reddit.com/r/soccer/comments/o9en0l/prediction_croatia_vs_spain/"
     }, {
         "match": "France vs Switzerland", 
         "winner": "Switzerland", 
         "bet": "France", 
         "wager": 30, 
         "earnings": 0, 
-        "matchThread": "<link>"
+        "matchThread": "https://www.reddit.com/r/soccer/comments/o9enu5/prediction_france_vs_switzerland/"
     }], 
     "Matchday 17": [{
         "match": "England vs Germany",
@@ -319,14 +319,14 @@
         "bet": "Germany",
         "wager": 100,
         "earnings": 0,
-        "matchThread": "<link>"
+        "matchThread": "https://www.reddit.com/r/soccer/comments/o9n7rf/prediction_england_vs_germany/"
     }, {
         "match": "Sweden vs Ukraine",
         "winner": "Ukraine",
         "bet": "Sweden", 
         "wager": 100, 
         "earnings": 0, 
-        "matchThread": "<link>"
+        "matchThread": "https://www.reddit.com/r/soccer/comments/o9qwzn/prediction_sweden_vs_ukraine/"
     }]
 }
 
