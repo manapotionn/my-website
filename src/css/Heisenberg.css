@@ -1,0 +1,94 @@
+svg:hover #arm-right {
+    animation: heisenberg-wave-right infinite 1s linear;
+    position: relative;
+}
+
+@keyframes heisenberg-wave-right {
+    from {
+        transform-origin: bottom left;
+        rotate: 0deg;
+    }
+    50% {
+        transform-origin: bottom left;
+        rotate: 7deg;
+        transform: translate(-15px, -15px);
+    }
+    to {
+        transform-origin: bottom left;
+        rotate: 0deg;
+    }
+}
+
+svg:hover #arm-left {
+    animation: heisenberg-wave-left infinite 2s linear;
+    position: relative;
+}
+
+@keyframes heisenberg-wave-left {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 2deg;
+        transform: translate(5px, 1px);
+    }
+    to {
+        rotate: 0deg;
+    }
+}
+
+svg:hover #ear-left {
+    animation: ear-wiggle-left infinite 2s linear;
+    position: relative;
+}
+
+@keyframes ear-wiggle-left {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 1deg;
+    }
+    to {
+        rotate: 0deg;
+    }
+}
+
+svg:hover #ear-right {
+    animation: ear-wiggle-right infinite 2s linear;
+    position: relative;
+}
+
+@keyframes ear-wiggle-right {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: -1deg;
+        transform: translate(0px, 2px);
+    }
+    to {
+        rotate: 0deg;
+    }
+}
+
+svg:hover #body-top {
+    animation: body infinite 2s linear;
+}
+
+svg:hover #scarf {
+    animation: body infinite 2s linear;
+}
+
+@keyframes body {
+    from {
+        rotate: 1deg;
+    }
+    50% {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 1deg;
+    }
+
+}
