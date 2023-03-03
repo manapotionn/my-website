@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'mena-handwriting';
+    src: url('../resources/Mena_handwriting_2023-Regular.otf'), url('../resources/Mena_handwriting_2023-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'mynerve';
+    src: url('../resources/Mynerve-Regular.ttf')
+}
+
+
 .commonPlace-container {
     display: flex;
     flex-direction: row;
+    font-family: 'mena-handwriting', 'mynerve';
+    font-size: 30px;
 }
 
 .tagsNav {

@@ -1,58 +1,162 @@
 [
     {
-        "month": "March",
-        "year": "2020",
+        "month": 3,
+        "year": 2020,
         "content": "Late at night I like to think about \\ the things that I want \\ and what is life \\ and who is real?",
         "author": "MISSIO",
         "source": "Losing My Mind",
         "tag": "lyrics"
     },
     {
-        "month": "idk",
-        "year": "2020",
+        "month": 9,
+        "year": 2017,
         "content": "I wonder if your therapist knows \\ everything about me",
         "author": "Fall Out Boy",
         "source": "The Last of the Real Ones",
         "tag": "lyrics"
     },
     {
-        "month": "January",
-        "year": "2023",
+        "month": 1,
+        "year": 2023,
         "content": "\"Yes,\" Ms. Bubblegum said sympathetically. \"Sounds like quite the existential crisis. Perhaps consider having it somewhere else.\"",
         "author": "TJ Kline",
         "source": "The House in the Cerulean Sea",
         "tag": "book quotes"
     },
     {
-        "month": "idk",
-        "year": "2022",
-        "content": "We are stories, contained within the twenty complicated centimeters behind our eyes, lines drawn by traces left by the (re)mingling together of things in the world, and oriented toward predicting events in the future, toward the direction of increasing entropy, in a rather particular corner of this immense, chaotic universe.",
+        "month": 10,
+        "year": 2022,
+        "content": "We are stories, contained within the twenty complicated centimeters behind our eyes, lines drawn by traces left by the remingling together of things in the world, and oriented toward predicting events in the future, toward the direction of increasing entropy, in a rather particular corner of this immense, chaotic universe.",
         "source": "The Order of Time",
-        "author": "Carlo Rovelli",
+        "author": "Carlo Rovellis",
         "tag": "book quotes"
     },
     {
-        "month": "idk",
-        "year": "idk",
+        "month": 1,
+        "year": 2015,
         "content": "You're my favorite what if, \\ you're the best I'll never know.",
         "source": "Fourth of July",
         "author": "Fall Out Boy",
         "tag": "lyrics"
     },
     {
-        "month": "idk",
-        "year": "idk",
+        "month": 5,
+        "year": 2021,
         "content": "If you could have it all \\ why do you want me?",
         "source": "Tonight You Are Mine",
         "author": "The Technicolors",
         "tag": "lyrics"
     },
     {
-        "month": "idk",
-        "year": "idk",
-        "content": "If you could have it all \\ why do you want me?",
-        "source": "Tonight You Are Mine",
-        "author": "The Technicolors",
+        "month": 1,
+        "year": 2022,
+        "content": "What if God's not real and everything we are \\ is just a moment here where we're only growing older \\ What if god is real and everything I've done \\ pushed me down this path where we're only growing colder",
+        "source": "Roman Empire",
+        "author": "MISSIO",
+        "tag": "lyrics"
+    },
+    {
+        "month": 10,
+        "year": 2019,
+        "content": "Oh my precious ember burning, \\ my sweet glowing light",
+        "source": "Too Late to Say Goodbye",
+        "author": "Cage the Elephant",
+        "tag": "lyrics"
+    },
+    {
+        "month": 6,
+        "year": 2021,
+        "content": "I'm walking back now \\ past all the fires \\ trying to find out why I grabbed the lighter",
+        "source": "Oh My Dear Lord",
+        "author": "The Unlikely Candidates",
+        "tag": "lyrics"
+    },
+    {
+        "month": 1,
+        "year": 2022,
+        "content": "I know you remember \\ how the leaves fell in November \\ the cold wind of December \\ and how we just fell apart",
+        "source": "In the Shadows",
+        "author": "Foreign Air",
+        "tag": "lyrics"
+    },
+    {
+        "month": 5,
+        "year": 2022,
+        "content": "Ain't no chariots of fire \\ come to take me home \\ I'm lost in the woods \\ and I wander alone",
+        "source": "Hellfire",
+        "author": "Barns Courtney",
+        "tag": "lyrics"
+    },
+    {
+        "month": 3,
+        "year": 2022,
+        "content": "Got half a lung and two left shoes \\ A bulletproof vest \\ and some breaking news \\ and I'm a blue-collared criminal \\ if I forget my rent is due",
+        "source": "Sunshine",
+        "author": "The Unlikely Candidates",
+        "tag": "lyrics"
+    },
+    {
+        "month": 4,
+        "year": 2022,
+        "content": "Oh come with me \\ I'll show you how to live for free",
+        "source": "Kicks",
+        "author": "Barns Courtney",
+        "tag": "lyrics"
+    },
+    {
+        "month": 2,
+        "year": 2014,
+        "content": "The road is long \\ we carry on \\ try to have fun in the meantime",
+        "source": "Born to Die",
+        "author": "Lana del Rey",
+        "tag": "lyrics"
+    },
+    {
+        "month": 2,
+        "year": 2013,
+        "content": "Now we're torn, torn, torn apart \\ there's nothing we can do \\ just let me go \\ we'll meet again soon",
+        "source": "Little Talks",
+        "author": "Of Monsters and Men",
+        "tag": "lyrics"
+    },
+    {
+        "month": 1,
+        "year": 2013,
+        "content": "We'd rather die than live to rust on the ground",
+        "source": "King for a Day",
+        "author": "Pierce the Veil ft. Kellin Quinn",
+        "tag": "lyrics"
+    },
+    {
+        "month": 1,
+        "year": 2013,
+        "content": "Nobody's gonna hold your hand \\ and guide you through \\ it's up for you to understand",
+        "source": "Roger Rabbit",
+        "author": "Sleeping with Sirens",
+        "tag": "lyrics"
+    },
+    {
+        "month": 11,
+        "year": 2012,
+        "content": "And I don't want the world to see me \\ 'cause I don't think that they'd understand \\ when everything's made to be broken \\ I just want you to know who I am",
+        "source": "Iris",
+        "author": "The Goo Goo Dolls",
+        "tag": "lyrics"
+    },
+    {
+        "month": 10,
+        "year": 2012,
+        "content": "There are many things that I would like to say to you \\ but I don't know how",
+        "source": "Wonderwall",
+        "author": "Oasis",
+        "tag": "lyrics"
+    },
+    {
+        "month": 10,
+        "year": 2012,
+        "content": "'Cause the love that you lost \\ wasn't worth what it cost \\ and in time you'll be glad it's gone",
+        "source": "Roads Untraveled",
+        "author": "Linkin Park",
         "tag": "lyrics"
     }
 ]
