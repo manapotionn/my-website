@@ -1,0 +1,13 @@
+.post {
+    background-color: #EFFCA3;
+    box-shadow: 0px 5px 10px gray;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.source {
+    margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+.commonPlace-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tagsNav {
+    flex: 1;
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+.posts-container {
+    flex: 4;
+}
