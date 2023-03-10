@@ -158,5 +158,157 @@
         "source": "Roads Untraveled",
         "author": "Linkin Park",
         "tag": "lyrics"
+    },
+    {
+        "month": 3,
+        "year": 2014,
+        "content": "I'm with you 'til the end of the line",
+        "source": "Captain America: The Winter Soldier",
+        "author": "Steve Rogers",
+        "tag": "movie quotes"
+    },
+    {
+        "month": 1,
+        "year": 2016,
+        "content": "Promise me a place \\ in your house of memories",
+        "source": "House of Memories",
+        "author": "Panic! At The Disco",
+        "tag": "lyrics"
+    },
+    {
+        "month": 3,
+        "year": 2013,
+        "content": "Such an incredible waste \\ of energy, to work your ass \\ off for sixty years, \\ then shrivel up, die, \\ and be nothing more \\ than a memory-- if you're \\ lucky enough to leave someone \\ behind who will remember you. There must be more \\ Don't you think?",
+        "source": "Impulse",
+        "author": "Ellen Hopkins",
+        "tag": "book quotes"
+    },
+    {
+        "month": 4,
+        "year": 2012,
+        "content": "I believe what doesn't kill you simply makes you... \\ stranger",
+        "source": "The Dark Knight",
+        "author": "Joker",
+        "tag": "movie quotes"
+    },
+    {
+        "month": 6,
+        "year": 2021,
+        "content": "The Trisolarans who deemed the humans bugs seemed to have forgotten one fact: The bugs have never been truly defeated.",
+        "source": "The Three-Body Problem",
+        "author": "Cixin Liu",
+        "tag": "book quotes"
+    },
+    {
+        "month": 8,
+        "year": 2021,
+        "content": "I said that people never change their lives, that in any case one life was as good as another and that I wasn’t dissatisfied with mine here at all.",
+        "source": "The Stranger",
+        "author": "Albert Camus",
+        "tag": "book quotes"
+    },
+    {
+        "month": 11,
+        "year": 2021,
+        "content": "- Why me? \\  - That is a very Earthling question to ask, Mr. Pilgrim. Why you? Why us for that matter? Why anything? Because this moment simply is. Have you ever seen bugs trapped in amber? \\ - Yes. \\ - Well, here we are, Mr. Pilgrim, trapped in the amber of this moment. There is no why.",
+        "source": "Slaughterhouse Five",
+        "author": "Kurt Vonnegut",
+        "tag": "book quotes"
+    },
+    {
+        "month": 4,
+        "year": 2016,
+        "content": "I say never be complete. Stop being perfect. I say let's evolve, let the chips fall where they may.",
+        "source": "Fight Club",
+        "author": "Tyler Durden",
+        "tag": "movie quotes"
+    },
+    {
+        "month": 3,
+        "year": 2022,
+        "content": "Respect the fact \\ that everything you hate \\ Your thoughts, your words \\ and everything you say \\ Defines you \\ Define you",
+        "source": "Train",
+        "author": "Brick and Mortar",
+        "tag": "lyrics"
+    },
+    {
+        "month": 10,
+        "year": 2019,
+        "content": "In this hell of a season \\ give me more than a reason \\ to be with you",
+        "source": "Hell of a Season",
+        "author": "The Black Keys",
+        "tag": "lyrics"
+    },
+    {
+        "month": 6,
+        "year": 2019,
+        "content": "As we slow dance, I became your statue, frozen \\ 'Times I wonder are we just a puff of smoke? Yeah \\ Underneath this bed of ashes \\ still withholding everything \\ like we were never close",
+        "source": "Ready to Let Go",
+        "author": "Cage the Elephant",
+        "tag": "lyrics"
+    },
+    {
+        "month": 2,
+        "year": 2020,
+        "content": "I'm down \\ I should be on top but I'm always underground \\ Things are looking up but I'm making myself drown",
+        "source": "Underground",
+        "author": "MISSIO",
+        "tag": "lyrics"
+    },
+    {
+        "month": 7,
+        "year": 2021,
+        "content": "Now would you pray before you twist the knife? \\ Yeah, would you take my hand and take a life?",
+        "source": "Used to the Darkness",
+        "author": "Des Rocs",
+        "tag": "lyrics"
+    },
+    {
+        "month": 12,
+        "year": 2020,
+        "content": "Take a seat back in your clam shell \\ If the ocean's not enough \\ nor am I",
+        "source": "Alrighty Aphrodite",
+        "author": "Peach Pit",
+        "tag": "lyrics"
+    },
+    {
+        "month": 12,
+        "year": 2020,
+        "content": "I wish we started in the rain \\ so that when it was gray \\ We'd think it was a fine and normal day",
+        "source": "Betcha",
+        "author": "July",
+        "tag": "lyrics"
+    },
+    {
+        "month": 7,
+        "year": 2020,
+        "content": "I get high to leave \\ all these problems on the ground \\ Then to my surprise \\ they're right there when I come back down",
+        "source": "Riptide",
+        "author": "grandson",
+        "tag": "lyrics"
+    },
+    {
+        "month": 7,
+        "year": 2020,
+        "content": "Didn't I have a reason? \\ Laying flat in the driveway \\ All this madness pleading \\ speaking in a slow drip",
+        "source": "Do You Need Me",
+        "author": "Lewis Del Mar",
+        "tag": "lyrics"
+    },
+    {
+        "month": 2,
+        "year": 2020,
+        "content": "'Cause it might've been something who's to say? \\ Does it help to get lost in yesterday?",
+        "source": "Lost in Yesterday",
+        "author": "Tame Impala",
+        "tag": "lyrics"
+    },
+    {
+        "month": 7,
+        "year": 2014,
+        "content": "If heaven's grief brings hell's rain \\ Then I'd trade all of my tomorrows \\ for just one yesterday",
+        "source": "Lost in Yesterday",
+        "author": "Tame Impala",
+        "tag": "lyrics"
     }
 ]

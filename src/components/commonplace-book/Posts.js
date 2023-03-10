@@ -1,17 +1,20 @@
 import postsData from "./data/data.json";
 import "./Posts.css";
 
-function Posts({ selectedTag, sortByDate }) {
+function Posts({ selectedTag, sortByDate, month }) {
   const filtered_data = postsData.filter((obj) => {
-    return obj.tag === selectedTag;
+    return (
+      obj.tag === selectedTag &&
+      (month !== 0 ? obj.month === month : obj.month > 0)
+    );
   });
 
   function asc(a, b) {
-    return a.year - b.year;
+    return a.year - b.year === 0 ? a.month - b.month : a.year - b.year;
   }
 
   function desc(a, b) {
-    return b.year - a.year;
+    return b.year - a.year === 0 ? b.month - a.month : b.year - a.year;
   }
 
   if (sortByDate) {
