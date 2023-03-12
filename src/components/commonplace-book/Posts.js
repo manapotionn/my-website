@@ -1,11 +1,12 @@
 import postsData from "./data/data.json";
 import "./Posts.css";
 
-function Posts({ selectedTag, sortByDate, month }) {
+function Posts({ selectedTag, sortByDate, month, year }) {
   const filtered_data = postsData.filter((obj) => {
     return (
       obj.tag === selectedTag &&
-      (month !== 0 ? obj.month === month : obj.month > 0)
+      (month !== 0 ? obj.month === month : obj.month > 0) &&
+      (year !== 0 ? obj.year === year : obj.year > 0)
     );
   });
 
