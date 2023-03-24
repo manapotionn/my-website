@@ -1,6 +1,7 @@
 import postsData from "./data/data.json";
 import "./Posts.css";
 import Tape from "./Tape";
+import { STICKY_COLORS } from "./Constants";
 
 function Posts({ selectedTag, sortByDate, month, year }) {
   const filtered_data = postsData.filter((obj) => {
@@ -25,13 +26,20 @@ function Posts({ selectedTag, sortByDate, month, year }) {
     filtered_data.sort(desc);
   }
 
+  const randomColor = () => {
+    return STICKY_COLORS[Math.floor(Math.random() * STICKY_COLORS.length)];
+  };
+
   return (
     <div className="posts">
       {filtered_data.map((item, index) => {
         let quotes = item.content.split("\\");
         return (
-          <div className={"post_" + index + " post"}>
-            <Tape isLeft={false} isTop />
+          <div
+            className={"post_" + index + " post"}
+            style={{ backgroundColor: randomColor() }}
+          >
+            <Tape isLeft={false} isTop isCenter={false} isRotated={false} />
             <div className={"content content" + index}>
               {quotes.map((line, index2) => {
                 return <div className={"line_" + index2}>{line}</div>;
@@ -41,7 +49,7 @@ function Posts({ selectedTag, sortByDate, month, year }) {
                 <div>{item.source}</div>
               </div>
             </div>
-            <Tape isLeft={true} isTop={false} />
+            <Tape isLeft={true} isTop={false} isRotated={false} />
           </div>
         );
       })}

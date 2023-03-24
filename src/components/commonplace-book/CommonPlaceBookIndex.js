@@ -12,7 +12,7 @@ function CommonPlaceBookIndex() {
 
   const generateOptions = (start, end) => {
     let options = [];
-    options.push({ value: 0, label: "--" });
+    options.push({ value: 0, label: "All" });
     for (let i = start; i <= end; i++) {
       options.push({ value: i, label: i.toString() });
     }
@@ -21,43 +21,53 @@ function CommonPlaceBookIndex() {
   };
 
   return (
-    <div className="commonPlace-container">
-      <div className="tagsNav">
-        {/* dynamically get list of tags ? */}
-        <TagsNav
-          tags={["lyrics", "movie quotes", "book quotes"]}
-          tagDisplay={tagDisplay}
-          setTagDisplay={setTagDisplay}
-        />
-
+    <>
+      <div className="filter-stickies">
         {/*move all of this into a separate component probably*/}
         <Select
+          id="month-filter"
           options={generateOptions(1, 12)}
           onChange={({ value }) => setMonth(value)}
           placeholder={"Month"}
         />
-        {/*todo: 2023 should be dynamic */}
         <Select
+          id="year-filter"
           options={generateOptions(2012, 2023)}
           onChange={({ value }) => setYear(value)}
           placeholder={"Year"}
         />
-        <div onClick={() => setIsAsc(!isAsc)}>
-          sort by date: {isAsc ? "asc" : "desc"}
-        </div>
+        <Select
+          id="sort-filter"
+          options={[
+            { value: true, label: "asc" },
+            { value: false, label: "desc" },
+          ]}
+          onChange={({ value }) => setIsAsc(value)}
+          placeholder={"Sort by Date"}
+        />
       </div>
-      <div className="posts-container">
-        <div>
-          <Posts
-            selectedTag={tagDisplay}
-            sortByDate={isAsc}
-            month={month}
-            year={year}
+      <div className="commonPlace-container">
+        <div className="tagsNav">
+          {/* dynamically get list of tags ? */}
+          <TagsNav
+            tags={["lyrics", "movie quotes", "book quotes"]}
+            tagDisplay={tagDisplay}
+            setTagDisplay={setTagDisplay}
           />
         </div>
+        <div className="posts-container">
+          <div>
+            <Posts
+              selectedTag={tagDisplay}
+              sortByDate={isAsc}
+              month={month}
+              year={year}
+            />
+          </div>
+        </div>
+        {/* <div>footer placeholder</div> */}
       </div>
-      {/* <div>footer placeholder</div> */}
-    </div>
+    </>
   );
 }
 
