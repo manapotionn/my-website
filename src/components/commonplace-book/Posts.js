@@ -1,5 +1,6 @@
 import postsData from "./data/data.json";
 import "./Posts.css";
+import Tape from "./Tape";
 
 function Posts({ selectedTag, sortByDate, month, year }) {
   const filtered_data = postsData.filter((obj) => {
@@ -30,6 +31,7 @@ function Posts({ selectedTag, sortByDate, month, year }) {
         let quotes = item.content.split("\\");
         return (
           <div className={"post_" + index + " post"}>
+            <Tape isLeft={false} isTop />
             <div className={"content content" + index}>
               {quotes.map((line, index2) => {
                 return <div className={"line_" + index2}>{line}</div>;
@@ -39,6 +41,7 @@ function Posts({ selectedTag, sortByDate, month, year }) {
                 <div>{item.source}</div>
               </div>
             </div>
+            <Tape isLeft={true} isTop={false} />
           </div>
         );
       })}
