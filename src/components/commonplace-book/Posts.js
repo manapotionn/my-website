@@ -34,12 +34,19 @@ function Posts({ selectedTag, sortByDate, month, year }) {
     <div className="posts">
       {filtered_data.map((item, index) => {
         let quotes = item.content.split("\\");
+        const isLeft = Math.random() < 0.5;
+
         return (
           <div
             className={"post_" + index + " post"}
             style={{ backgroundColor: randomColor() }}
           >
-            <Tape isLeft={false} isTop isCenter={false} isRotated={false} />
+            <Tape
+              isTop={true}
+              isLeft={isLeft}
+              isCenter={false}
+              isRotated={Math.random() < 0.5}
+            />
             <div className={"content content" + index}>
               {quotes.map((line, index2) => {
                 return <div className={"line_" + index2}>{line}</div>;
@@ -49,7 +56,12 @@ function Posts({ selectedTag, sortByDate, month, year }) {
                 <div>{item.source}</div>
               </div>
             </div>
-            <Tape isLeft={true} isTop={false} isRotated={false} />
+            <Tape
+              isTop={false}
+              isLeft={!isLeft}
+              isCenter={false}
+              isRotated={Math.random() < 0.5}
+            />
           </div>
         );
       })}

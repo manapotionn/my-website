@@ -7,8 +7,20 @@ function Tape({ isTop, isLeft, isCenter, isRotated }) {
         return "rotate(42deg)";
       }
     } else {
-      const degrees = Math.floor(Math.random() * 5);
+      const degrees = Math.floor(Math.random() * 3);
       return "rotate(" + degrees + "deg)";
+    }
+  };
+
+  const getWidth = () => {
+    if (isRotated) {
+      if (isTop) {
+        return "120px";
+      } else {
+        return "70px";
+      }
+    } else {
+      return Math.floor(Math.random() * 300 + 100);
     }
   };
 
@@ -17,7 +29,7 @@ function Tape({ isTop, isLeft, isCenter, isRotated }) {
     position: "absolute",
     opacity: 0.5,
     height: "30px",
-    width: isTop ? "120px" : "70px",
+    width: getWidth(),
     transform: transform(),
     marginTop: isRotated
       ? isTop
