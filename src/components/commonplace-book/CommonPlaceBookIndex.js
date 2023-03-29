@@ -3,6 +3,7 @@ import Select from "react-select";
 import TagsNav from "./TagsNav";
 import Posts from "./Posts";
 import "./CommonPlaceBookIndex.css";
+import { PAGE_COLORS, FILTER_COLORS } from "./Constants";
 
 function CommonPlaceBookIndex() {
   const [tagDisplay, setTagDisplay] = useState("lyrics");
@@ -50,12 +51,15 @@ function CommonPlaceBookIndex() {
         <div className="tagsNav">
           {/* dynamically get list of tags ? */}
           <TagsNav
-            tags={["lyrics", "movie quotes", "book quotes"]}
+            tags={Object.keys(PAGE_COLORS)}
             tagDisplay={tagDisplay}
             setTagDisplay={setTagDisplay}
           />
         </div>
-        <div className="posts-container">
+        <div
+          className="posts-container"
+          style={{ backgroundColor: PAGE_COLORS[tagDisplay] }}
+        >
           <div>
             <Posts
               selectedTag={tagDisplay}

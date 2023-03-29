@@ -1,3 +1,5 @@
+import { PAGE_COLORS } from "./Constants";
+
 function TagsNav({ tags, tagDisplay, setTagDisplay }) {
   return (
     <>
@@ -5,6 +7,7 @@ function TagsNav({ tags, tagDisplay, setTagDisplay }) {
         let selectedTag = tagDisplay === item ? " selected-tag" : "";
         return (
           <div
+            style={{ backgroundColor: PAGE_COLORS[item] }}
             className={"tag tag_" + index + selectedTag}
             onClick={() => setTagDisplay(item)}
           >
