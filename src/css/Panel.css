@@ -1,23 +1,39 @@
 .panel-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin: 10px;
   font-size: 14px;
+  border: 2px solid black;
+  resize: both;
+  overflow: auto;
+  position: absolute;
+  filter: drop-shadow(2px 2px black)
 }
 
 .title-bar {
   order: 1;
-  background: #8ce975;
+  background: linear-gradient(264deg, rgba(175,0,215,1) 0%, rgba(255,184,253,1) 56%, rgba(160,255,242,1) 88%);
   padding: 5px;
-  text-align: center;
   /* font-weight: bold; */
   font-size: 15px;
+  display: flex;
+}
+
+.title-bar-icons {
+  margin-left: auto;
+}
+
+.title-bar-button {
+  border: 2px solid purple;
+  padding: 1px 5px;
+}
+
+.title-bar-button:hover {
+  background-color: pink;
 }
 
 .content-container {
   order: 2;
-  background: #ffffff;
+  background: #e3e3e3;
   height: 100%;
-  margin-bottom: 15px;
 }
