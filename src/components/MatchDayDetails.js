@@ -12,8 +12,10 @@ function MatchDayDetails({ matchdayData, matchday }) {
               return (
                 <div>
                   <p key={i}>{matchDetails["match"]}</p>
-                  <p>{"my bet: " + matchDetails["bet"]}</p>
-                  <p>{"actual winner: " + matchDetails["winner"]}</p>
+                  <p key={i + "bet"}>{"my bet: " + matchDetails["bet"]}</p>
+                  <p key={i + "winner"}>
+                    {"actual winner: " + matchDetails["winner"]}
+                  </p>
                   <br />
                 </div>
               );

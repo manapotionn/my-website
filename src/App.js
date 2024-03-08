@@ -9,43 +9,27 @@ import File from "./components/File";
 import EuroBets from "./components/EuroBets";
 import me from "./me.jpg";
 import Popo from "./components/Popo";
+import { AppStateProvider } from "./store/AppState";
+import { AppReducer } from "./store/AppReducer";
 
 function App() {
-  const [openWindows, setOpenWindows] = useState({
-    about: true,
-    experience: true,
-    skills: true,
-  });
-
   return (
-    <div className="app">
-      <Panel
-        title="about.txt"
-        id="about"
-        openWindows={openWindows}
-        setOpenWindows={setOpenWindows}
-      >
-        <About />
-      </Panel>
+    <AppStateProvider reducer={AppReducer}>
+      <div className="app">
+        <Panel id="about">
+          <About />
+        </Panel>
 
-      <Panel
-        title="experience.txt"
-        id="experience"
-        openWindows={openWindows}
-        setOpenWindows={setOpenWindows}
-      >
-        <Experience />
-      </Panel>
+        <Panel id="experience">
+          <Experience />
+        </Panel>
 
-      <Panel
-        title="skills.txt"
-        id="skills"
-        openWindows={openWindows}
-        setOpenWindows={setOpenWindows}
-      >
-        <Skills />
-      </Panel>
-    </div>
+        <Panel id="skills">
+          <Skills />
+        </Panel>
+      </div>
+    </AppStateProvider>
+
     // <div>
     //   <div className="app">
     //     <div className="flexbox-left">

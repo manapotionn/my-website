@@ -1,7 +1,7 @@
 {
     "Matchday 1": [{
         "match": "Turkey vs Italy",
-        "winner:": "Italy",
+        "winner": "Italy",
         "bet": "Italy",
         "wager": 10,
         "earnings": 12,
@@ -34,7 +34,7 @@
         "winner": "England",
         "bet": "Croatia",
         "wager": 30,
-        "earnings": 0,
+        "earnings": 30,
         "matchThread": "https://www.reddit.com/r/soccer/comments/ny63kj/prediction_england_vs_croatia/" 
     }, {
         "match": "Austria vs North Macedonia",
@@ -327,6 +327,60 @@
         "wager": 100, 
         "earnings": 0, 
         "matchThread": "https://www.reddit.com/r/soccer/comments/o9qwzn/prediction_sweden_vs_ukraine/"
+    }], 
+    "Matchday 18": [{
+        "match": "Switzerland vs Spain",
+        "winner": "Spain",
+        "bet": "Switzerland",
+        "wager": 100,
+        "earnings": 0, 
+        "matchThread": ""
+    }, {
+        "match": "Belgium vs Italy",
+        "winner": "Italy",
+        "bet": "Belgium", 
+        "wager": 100,
+        "earnings": 0,
+        "matchThread": ""
+    }], 
+    "Matchday 19": [{
+        "match": "Czech Republic vs Denmark", 
+        "winner": "Denmark", 
+        "bet": "Denmark",
+        "wager": 100, 
+        "earnings": 139,
+        "matchThread": "https://www.reddit.com/r/soccer/comments/ocmdb2/prediction_czech_republic_v_denmark/"
+    }, {
+        "match": "Ukraine vs England", 
+        "winner": "England",
+        "bet": "England",
+        "wager": 100,
+        "earnings": 130,
+        "matchThread": "https://www.reddit.com/r/soccer/comments/ocme3y/prediction_ukraine_v_england/"
+    }],
+    "Matchday 20": [{
+        "match": "Italy vs Spain",
+        "winner": "Italy",
+        "bet": "Italy",
+        "wager": 100,
+        "earnings": 126,
+        "matchThread": "https://www.reddit.com/r/soccer/comments/oeoib6/prediction_italy_vs_spain/"
+    }],
+    "Matchday 21": [{
+        "match": "England vs Denmark",
+        "winner": "England",
+        "bet": "England",
+        "wager": 100, 
+        "earnings": 164,
+        "matchThread": "https://www.reddit.com/r/soccer/comments/ofe6u6/prediction_england_vs_denmark/"
+    }],
+    "Matchday 22": [{
+        "match": "Italy vs England",
+        "winner": "Italy",
+        "bet": "Italy",
+        "wager": 100,
+        "earnings": 171, 
+        "matchThread": "https://www.reddit.com/r/soccer/comments/ohl1jg/prediction_england_vs_italy_euro_2020_final/"
     }]
 }
 

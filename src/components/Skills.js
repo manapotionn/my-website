@@ -12,8 +12,9 @@ function Skills() {
       <h4>Other Skills</h4>
       <p>Prometheus (and PromQL), Grafana, Splunk</p>
       <p>ElasticSearch, MongoDB</p>
-      <p>Kubernetes</p>
+      <p>Kubernetes, AWS (Cloud Practitioner)</p>
       <p>Bitbucket, Confluence, Jira</p>
+      <p>Figma</p>
     </div>
   );
 }

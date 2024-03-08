@@ -307,8 +307,72 @@
         "month": 7,
         "year": 2014,
         "content": "If heaven's grief brings hell's rain \\ Then I'd trade all of my tomorrows \\ for just one yesterday",
-        "source": "Lost in Yesterday",
-        "author": "Tame Impala",
+        "source": "Just One Yesterday",
+        "author": "Fall Out Boy",
+        "tag": "lyrics"
+    },
+    {
+        "month": 9,
+        "year": 2019,
+        "content": "We can't change the things we can't control \\ It's summer somewhere \\ So you shouldn't be so cold",
+        "source": "Imagination",
+        "author": "Foster The People",
+        "tag": "lyrics"
+    },
+    {
+        "month": 1,
+        "year": 2019,
+        "content": "Every day it gets a little easier... But you gotta do it every day. That's the hard part. But it does get easier.",
+        "source": "Bojack Horseman S2:E12",
+        "author": "Jogging Baboon",
+        "tag": "tv quotes"
+    },
+    {
+        "month": 9,
+        "year": 2016,
+        "content": "This is my own private domicile and I will not be harassed",
+        "source": "Breaking Bad S3:E6",
+        "author": "Jesse Pinkman",
+        "tag": "tv quotes"
+    },
+    {
+        "month": 11,
+        "year": 2022,
+        "content": "In another life, I would have really liked just doing laundry and taxes with you",
+        "source": "Everything Everywhere All At Once",
+        "author": "Waymond",
+        "tag": "movie quotes"
+    },
+    {
+        "month": 12,
+        "year": 2011,
+        "content": "Is it bright where you are \\ Now the people changed? Does it make you happy, you're so strange?",
+        "source": "The Beginning is the End is the Beginning",
+        "author": "Smashing Pumpkins",
+        "tag": "lyrics"
+    },
+    {
+        "month": 9,
+        "year": 2020,
+        "content": "Heartbreaks, the heavy world's upon your shoulders \\ Will we burn or we just smolder? \\ Somehow I know I'll find you there",
+        "source": "Come a Little Closer",
+        "author": "Cage the Elephant",
+        "tag": "lyrics"
+    },
+    {
+        "month": 8,
+        "year": 2022,
+        "content": "What planet are you on \\ What constellation \\ You're floating like a ghost \\ Out here in the unknown",
+        "source": "Babylon",
+        "author": "Barns Courtney",
+        "tag": "lyrics"
+    },
+    {
+        "month": 9,
+        "year": 2022,
+        "content": "I'm thirsty \\ I'm dying \\ Upon my desert island \\ Why won't you come save me? \\ I'm drowning in your silence",
+        "source": "Blue Days",
+        "author": "Foreign Air",
         "tag": "lyrics"
     }
 ]

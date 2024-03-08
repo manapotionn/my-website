@@ -4,6 +4,7 @@ export const PAGE_COLORS = {
   lyrics: "#ffffff",
   "movie quotes": "#FFF9F8",
   "book quotes": "#F9E8E7",
+  "tv quotes": "#FFFFFF",
 };
 
 export const FILTER_COLORS = {
