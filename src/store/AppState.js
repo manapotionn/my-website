@@ -6,14 +6,17 @@ export const initialState = {
   about: {
     open: true,
     title: "about.md",
+    z: 0,
   },
   experience: {
     open: true,
     title: "experience.md",
+    z: 1,
   },
   skills: {
     open: true,
     title: "skills.md",
+    z: 2,
   },
 };
 

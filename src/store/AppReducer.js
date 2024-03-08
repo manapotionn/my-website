@@ -1,15 +1,18 @@
-export const OPEN_WINDOW = "OPEN_WINDOW";
+export const UPDATE_ONE_VAL = "UPDATE_ONE_VAL";
+export const UPDATE_ALL = "UPDATE_ALL";
 
 const AppReducer = (state, action = {}) => {
   switch (action.type) {
-    case OPEN_WINDOW:
+    case UPDATE_ONE_VAL:
       return {
         ...state,
         [action.id]: {
-          ...[action.id],
-          open: action.newValue,
+          ...state[action.id],
+          [action.valToBeUpdated]: action.newValue,
         },
       };
+    case UPDATE_ALL:
+      return action.newValue;
     default:
       return state;
   }

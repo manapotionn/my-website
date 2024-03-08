@@ -4,13 +4,14 @@ import "../css/TextFile.css";
 function About() {
   return (
     <div className="textfile-container">
-      <h1>hi! i'm mena</h1>
+      <h1>hellooo! i'm mena</h1>
       <br />
-      <p> Software Engineer</p>
-      <p> at JPMorgan Chase &amp; Co.</p>
-      <br />
-      <p> CS '20 </p>
-      <p> at Cornell University</p>
+      <p>
+        <b>Software Engineer</b> @ JPMorgan Chase &amp; Co.
+      </p>
+      <p>
+        <b>CS '20</b> @ at Cornell University
+      </p>
     </div>
   );
 }
