@@ -18,6 +18,11 @@ export const initialState = {
     title: "skills.md",
     z: 2,
   },
+  me: {
+    open: true,
+    title: "me.jpg",
+    z: 3,
+  },
 };
 
 export function AppStateProvider({ reducer, children }) {

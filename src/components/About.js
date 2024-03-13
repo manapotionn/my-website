@@ -10,7 +10,7 @@ function About() {
         <b>Software Engineer</b> @ JPMorgan Chase &amp; Co.
       </p>
       <p>
-        <b>CS '20</b> @ at Cornell University
+        <b>CS '20</b> @ Cornell University
       </p>
     </div>
   );

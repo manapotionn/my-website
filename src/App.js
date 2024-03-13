@@ -7,10 +7,11 @@ import Skills from "./components/Skills";
 import File from "./components/File";
 
 import EuroBets from "./components/EuroBets";
-import me from "./me.jpg";
 import Popo from "./components/Popo";
 import { AppStateProvider } from "./store/AppState";
 import { AppReducer } from "./store/AppReducer";
+import me from "./me.jpeg";
+import DesktopIcon from "./components/DesktopIcon";
 
 function App() {
   return (
@@ -27,6 +28,14 @@ function App() {
         <Panel id="skills">
           <Skills />
         </Panel>
+        <Panel id="me">
+          <img src={me} alt="me" width="300px" />
+        </Panel>
+
+        <DesktopIcon icon="doc" text="about" id="about" />
+        <DesktopIcon icon="doc" text="experience" id="experience" />
+        <DesktopIcon icon="doc" text="skills" id="skills" />
+        <DesktopIcon icon="pic" text="me" id="me" />
       </div>
     </AppStateProvider>
 
