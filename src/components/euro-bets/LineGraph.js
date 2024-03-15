@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
 
 import MatchDayDetails from "./MatchDayDetails";
-
-import betsData from "../euro2020.json";
-import "../css/EuroBets.css";
+import betsData from "../../euro2020.json";
+import "../../css/EuroBets.css";
 
 function getLineData() {
   const netChangeData = [];

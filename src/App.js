@@ -6,36 +6,47 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import File from "./components/File";
 
-import EuroBets from "./components/EuroBets";
-import Popo from "./components/Popo";
+import EuroBets from "./components/euro-bets/EuroBets";
+import Popo from "./components/stuffed-animals/Popo";
 import { AppStateProvider } from "./store/AppState";
 import { AppReducer } from "./store/AppReducer";
 import me from "./me.jpeg";
 import DesktopIcon from "./components/DesktopIcon";
+import BottomBar from "./components/BottomBar";
 
 function App() {
   return (
     <AppStateProvider reducer={AppReducer}>
       <div className="app">
-        <Panel id="about">
-          <About />
-        </Panel>
+        <div className="main-area">
+          <Panel id="about">
+            <About />
+          </Panel>
 
-        <Panel id="experience">
-          <Experience />
-        </Panel>
+          <Panel id="experience">
+            <Experience />
+          </Panel>
 
-        <Panel id="skills">
-          <Skills />
-        </Panel>
-        <Panel id="me">
-          <img src={me} alt="me" width="300px" />
-        </Panel>
+          <Panel id="skills">
+            <Skills />
+          </Panel>
+          <Panel id="me">
+            <img src={me} alt="me" width="300px" />
+          </Panel>
 
-        <DesktopIcon icon="doc" text="about" id="about" />
-        <DesktopIcon icon="doc" text="experience" id="experience" />
-        <DesktopIcon icon="doc" text="skills" id="skills" />
-        <DesktopIcon icon="pic" text="me" id="me" />
+          <Panel id="eurobets">
+            <EuroBets />
+          </Panel>
+
+          <DesktopIcon icon="doc" text="about" id="about" />
+          <DesktopIcon icon="doc" text="experience" id="experience" />
+          <DesktopIcon icon="doc" text="skills" id="skills" />
+          <DesktopIcon icon="pic" text="me" id="me" />
+          <DesktopIcon icon="folder" text="folder" id="me" />
+        </div>
+        <div className="bottom-bar">
+          <BottomBar />
+        </div>
       </div>
     </AppStateProvider>
 

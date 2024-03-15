@@ -3,11 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import CommonPlaceBookIndex from "./components/commonplace-book/CommonPlaceBookIndex";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <CommonPlaceBookIndex /> */}
     <App />
   </React.StrictMode>,
   document.getElementById("root")

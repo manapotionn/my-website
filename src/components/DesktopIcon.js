@@ -1,6 +1,7 @@
 import { ReactComponent as DocSmall } from "./resources/doc_32.svg";
 import { ReactComponent as DocMedium } from "./resources/doc_64.svg";
 import { ReactComponent as PicMedium } from "./resources/pic_64.svg";
+import { ReactComponent as FolderMedium } from "./resources/folder_64.svg";
 import { useAppState } from "../store/AppState";
 import { UPDATE_ONE_VAL } from "../store/AppReducer";
 import Draggable from "react-draggable";
@@ -23,6 +24,8 @@ const DesktopIcon = ({ icon, text, id }) => {
       return <DocMedium />;
     } else if (icon === "pic") {
       return <PicMedium />;
+    } else if (icon === "folder") {
+      return <FolderMedium />;
     }
   };
 

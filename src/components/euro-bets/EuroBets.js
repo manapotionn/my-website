@@ -3,8 +3,8 @@ import { Pie, Bar } from "react-chartjs-2";
 
 import LineGraph from "./LineGraph";
 
-import betsData from "../euro2020.json";
-import "../css/EuroBets.css";
+import betsData from "../../euro2020.json";
+import "../../css/EuroBets.css";
 
 // function getLineData() {
 //   const netChangeData = [];

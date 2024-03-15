@@ -1,5 +1,5 @@
 import { SpriteAnimator } from "react-sprite-animator";
-import PopoSprite from "./resources/blink_and_wave_popo.svg";
+import PopoSprite from "../resources/blink_and_wave_popo.svg";
 import { useState } from "react";
 
 function Popo() {

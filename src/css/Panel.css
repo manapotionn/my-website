@@ -21,6 +21,8 @@
 
 .title-bar-icons {
   margin-left: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .title-bar-button {

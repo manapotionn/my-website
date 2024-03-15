@@ -17,6 +17,15 @@ function Panel({ id, children }) {
     });
   };
 
+  const handleMinimizeWindow = () => {
+    dispatch({
+      type: UPDATE_ONE_VAL,
+      valToBeUpdated: "minimize",
+      id: id,
+      newValue: true,
+    });
+  };
+
   const handleZIndex = () => {
     let maxVal = 0;
     for (let key in state) {
@@ -33,7 +42,7 @@ function Panel({ id, children }) {
     });
   };
 
-  return obj.open ? (
+  return obj.open && !obj.minimize ? (
     <Draggable handle=".title-bar" onStart={handleZIndex}>
       <div
         className="panel-container"
@@ -43,6 +52,9 @@ function Panel({ id, children }) {
         <div className="title-bar">
           <div className="title">{obj.title}</div>
           <div className="title-bar-icons">
+            <div className="title-bar-button" onClick={handleMinimizeWindow}>
+              -
+            </div>
             <div className="title-bar-button" onClick={handleCloseWindow}>
               x
             </div>
