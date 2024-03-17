@@ -31,6 +31,10 @@ body {
   justify-content: normal;
 }
 
+.desktop-icons {
+  position: absolute;
+}
+
 .full-screen {
   flex: 1;
 }

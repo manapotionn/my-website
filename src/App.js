@@ -37,12 +37,14 @@ function App() {
           <Panel id="eurobets">
             <EuroBets />
           </Panel>
-
-          <DesktopIcon icon="doc" text="about" id="about" />
-          <DesktopIcon icon="doc" text="experience" id="experience" />
-          <DesktopIcon icon="doc" text="skills" id="skills" />
-          <DesktopIcon icon="pic" text="me" id="me" />
-          <DesktopIcon icon="folder" text="folder" id="me" />
+          <div className="desktop-icons">
+            <DesktopIcon icon="doc" text="about" id="about" />
+            <DesktopIcon icon="doc" text="experience" id="experience" />
+            <DesktopIcon icon="doc" text="skills" id="skills" />
+            <DesktopIcon icon="pic" text="me" id="me" />
+            {/* <DesktopIcon icon="folder" text="folder" id="me" /> */}
+          </div>
+          <div className="empty"></div>
         </div>
         <div className="bottom-bar">
           <BottomBar />

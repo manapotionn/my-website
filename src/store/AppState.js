@@ -7,31 +7,31 @@ export const initialState = {
     open: true,
     minimize: false,
     title: "about.md",
-    z: 0,
+    z: 1,
   },
   experience: {
     open: true,
     minimize: false,
     title: "experience.md",
-    z: 1,
+    z: 2,
   },
   skills: {
     open: true,
     minimize: false,
     title: "skills.md",
-    z: 2,
+    z: 3,
   },
   me: {
     open: true,
     minimize: false,
     title: "me.jpg",
-    z: 3,
+    z: 4,
   },
   eurobets: {
     open: false,
     minimize: false,
     title: "eurobets.exe",
-    z: 4,
+    z: 5,
   },
 };
 

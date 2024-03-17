@@ -48,6 +48,7 @@ function Panel({ id, children }) {
         className="panel-container"
         id={"panel_" + id}
         style={{ zIndex: obj.z }}
+        onClick={handleZIndex}
       >
         <div className="title-bar">
           <div className="title">{obj.title}</div>

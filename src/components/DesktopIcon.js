@@ -19,6 +19,17 @@ const DesktopIcon = ({ icon, text, id }) => {
     });
   };
 
+  const handleUnMinimizeWindow = () => {
+    if (state[id].minimize === true) {
+      dispatch({
+        type: UPDATE_ONE_VAL,
+        valToBeUpdated: "minimize",
+        id: id,
+        newValue: false,
+      });
+    }
+  };
+
   const iconFactory = () => {
     if (icon === "doc") {
       return <DocMedium />;
@@ -31,7 +42,13 @@ const DesktopIcon = ({ icon, text, id }) => {
 
   return (
     <Draggable>
-      <div className="icon-container" onDoubleClick={handleOpenWindow}>
+      <div
+        className="icon-container"
+        onDoubleClick={() => {
+          handleOpenWindow();
+          handleUnMinimizeWindow();
+        }}
+      >
         {iconFactory()}
         <div className="icon-text">{text}</div>
       </div>

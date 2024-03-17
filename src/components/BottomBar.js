@@ -11,7 +11,7 @@ const BottomBar = () => {
       type: UPDATE_ONE_VAL,
       valToBeUpdated: "minimize",
       id: id,
-      newValue: false,
+      newValue: !state[id].minimize,
     });
   };
 
@@ -34,21 +34,26 @@ const BottomBar = () => {
   return (
     <div className="bottom-bar-container">
       <div>placeholder</div>
-      {Object.entries(state).map((item, index) => {
-        if (item[1].open) {
-          return (
-            <div
-              onClick={() => {
-                handleZIndex(item[0]);
-                handleMinimizeWindow(item[0]);
-              }}
-              className={"menu-bar" + index}
-            >
-              {item[1].title}
-            </div>
-          );
-        }
-      })}
+      <div className="bottom-bar-items">
+        {Object.entries(state).map((item, index) => {
+          if (item[1].open) {
+            return (
+              <div
+                onClick={() => {
+                  handleZIndex(item[0]);
+                  handleMinimizeWindow(item[0]);
+                }}
+                className={
+                  "bottom-bar-item" + (item[1].minimize ? "" : "-visible")
+                }
+                id={"bottom-bar-item" + index}
+              >
+                {item[1].title}
+              </div>
+            );
+          }
+        })}
+      </div>
     </div>
   );
 };
