@@ -1,3 +1,7 @@
+.eurobets-container {
+  margin: 20px;
+}
+
 .flexbox-panel {
   display: flex;
   flex-direction: row;

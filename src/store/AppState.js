@@ -31,7 +31,13 @@ export const initialState = {
     open: false,
     minimize: false,
     title: "eurobets.exe",
-    z: 5,
+    z: 1,
+  },
+  projects: {
+    open: false,
+    minimize: false,
+    title: "projects",
+    z: 1,
   },
 };
 

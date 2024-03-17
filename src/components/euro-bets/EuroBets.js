@@ -165,7 +165,17 @@ function EuroBets() {
   };
 
   return (
-    <div>
+    <div className="eurobets-container">
+      <div>
+        <h4>What is this?</h4>
+        <p>
+          During the 2020ne Euros, r/soccer allowed us to bet unicorns (tokens)
+          on games. <br />
+          Despite having more correct predictions than wrong predictions, I
+          still lost tokens thanks to betting odds. <br />
+          Safe to say I will not be betting any real money soon.
+        </p>
+      </div>
       <div className="flexbox-panel">
         <div className="flexbox-panel-left">
           <Pie data={getPieData()} />

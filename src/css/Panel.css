@@ -62,3 +62,7 @@
   width: 300px;
   height: 300px;
 }
+
+#panel_eurobets {
+  max-height: 90%;
+}
