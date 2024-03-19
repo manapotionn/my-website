@@ -39,7 +39,7 @@ function App() {
           </Panel>
 
           <Panel id="projects">
-            <DesktopIcon icon="pic" text="eurobets" id="eurobets" />
+            <DesktopIcon icon="app" text="eurobets" id="eurobets" />
           </Panel>
 
           <div className="desktop-icons">
