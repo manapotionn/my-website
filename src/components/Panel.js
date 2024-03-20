@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Panel.css";
 import Draggable from "react-draggable";
 import { useAppState } from "../store/AppState";
-import { UPDATE_ONE_VAL } from "../store/AppReducer";
+import { UPDATE_MULTIPLE_VALS_ID, UPDATE_ONE_VAL } from "../store/AppReducer";
 
 function Panel({ id, children }) {
   const [state, dispatch] = useAppState();
   const obj = state[id];
+
+  const [deltaPosition, setDeltaPosition] = useState({ x: obj.x, y: obj.y });
+
+  const handleDrag = (e, ui) => {
+    const { x, y } = deltaPosition;
+    setDeltaPosition({
+      x: x + ui.deltaX,
+      y: y + ui.deltaY,
+    });
+  };
 
   const handleCloseWindow = () => {
     dispatch({
@@ -23,6 +33,14 @@ function Panel({ id, children }) {
       valToBeUpdated: "minimize",
       id: id,
       newValue: true,
+    });
+  };
+
+  const handleXY = () => {
+    dispatch({
+      type: UPDATE_MULTIPLE_VALS_ID,
+      id: id,
+      newValue: { ...obj, x: deltaPosition.x, y: deltaPosition.y },
     });
   };
 
@@ -43,7 +61,13 @@ function Panel({ id, children }) {
   };
 
   return obj.open && !obj.minimize ? (
-    <Draggable handle=".title-bar" onStart={handleZIndex}>
+    <Draggable
+      handle=".title-bar"
+      onStart={handleZIndex}
+      onDrag={handleDrag}
+      onStop={handleXY}
+      position={{ x: deltaPosition.x, y: deltaPosition.y }}
+    >
       <div
         className="panel-container"
         id={"panel_" + id}
