@@ -10,6 +10,7 @@ import { AppStateProvider } from "./store/AppState";
 import { AppReducer } from "./store/AppReducer";
 import me from "./me.jpeg";
 import DesktopIcon from "./components/DesktopIcon";
+import ExternalLink from "./components/ExternalLink";
 import BottomBar from "./components/BottomBar";
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
             <EuroBets />
           </Panel>
 
-          <Panel id="projects">
+          <Panel id="experiments">
             <DesktopIcon icon="app" text="eurobets" id="eurobets" />
           </Panel>
 
@@ -45,7 +46,11 @@ function App() {
             <DesktopIcon icon="doc" text="experience" id="experience" />
             <DesktopIcon icon="doc" text="skills" id="skills" />
             <DesktopIcon icon="pic" text="me" id="me" />
-            <DesktopIcon icon="folder" text="projects" id="projects" />
+            <DesktopIcon icon="folder" text="experiments" id="experiments" />
+            <ExternalLink
+              link="https://drive.google.com/file/d/1pS0ZAeNyblsOIgETLTb5xC9PkUM5ysSZ/view?usp=sharing"
+              text="resume"
+            />
           </div>
           <div className="empty"></div>
         </div>

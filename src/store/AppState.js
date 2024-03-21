@@ -43,10 +43,10 @@ export const initialState = {
     y: 0,
     z: 1,
   },
-  projects: {
+  experiments: {
     open: false,
     minimize: false,
-    title: "projects",
+    title: "experiments",
     x: 0,
     y: 0,
     z: 1,

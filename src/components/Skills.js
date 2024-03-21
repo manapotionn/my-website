@@ -6,13 +6,13 @@ function Skills() {
     <div className="textfile-container">
       <h4>Programming Languages</h4>
       <p>Python, Java</p>
-      <p>HTML, CSS, JavaScript (React)</p>
+      <p>HTML, CSS, JavaScript/TypeScript (React)</p>
       <br />
 
       <h4>Other Skills</h4>
-      <p>Prometheus (and PromQL), Grafana, Splunk</p>
+      <p>Prometheus, Grafana, Splunk</p>
       <p>ElasticSearch, MongoDB</p>
-      <p>Kubernetes, AWS (Cloud Practitioner)</p>
+      <p>Kubernetes, Docker, AWS</p>
       <p>Bitbucket, Confluence, Jira</p>
       <p>Figma</p>
     </div>
