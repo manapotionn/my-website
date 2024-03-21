@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/BottomBar.css";
 import { useAppState } from "../store/AppState";
-import { UPDATE_ONE_VAL } from "../store/AppReducer";
+import { UPDATE_MULTIPLE_VALS_ID, UPDATE_ONE_VAL } from "../store/AppReducer";
 
 const BottomBar = () => {
   const [state, dispatch] = useAppState();
@@ -31,9 +31,27 @@ const BottomBar = () => {
     });
   };
 
+  /* temporary -- will be replaced with legit menu */
+  const handleStart = () => {
+    let maxVal = 0;
+    for (let key in state) {
+      if (state[key].z > maxVal) {
+        maxVal = state[key].z;
+      }
+    }
+
+    dispatch({
+      type: UPDATE_MULTIPLE_VALS_ID,
+      id: "tempabout",
+      newValue: { ...state["tempabout"], z: maxVal, open: true },
+    });
+  };
+
   return (
     <div className="bottom-bar-container">
-      <div>placeholder</div>
+      <div onClick={handleStart} className="start-button">
+        start
+      </div>
       <div className="bottom-bar-items">
         {Object.entries(state).map((item, index) => {
           if (item[1].open) {

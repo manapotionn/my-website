@@ -12,6 +12,7 @@ import me from "./me.jpeg";
 import DesktopIcon from "./components/DesktopIcon";
 import ExternalLink from "./components/ExternalLink";
 import BottomBar from "./components/BottomBar";
+import TemporaryAbout from "./components/TemporaryAbout";
 
 function App() {
   return (
@@ -39,6 +40,10 @@ function App() {
 
           <Panel id="experiments">
             <DesktopIcon icon="app" text="eurobets" id="eurobets" />
+          </Panel>
+
+          <Panel id="tempabout">
+            <TemporaryAbout />
           </Panel>
 
           <div className="desktop-icons">

@@ -51,6 +51,14 @@ export const initialState = {
     y: 0,
     z: 1,
   },
+  tempabout: {
+    open: false,
+    minimize: false,
+    title: "about this computer",
+    x: 0,
+    y: 0,
+    z: 1,
+  },
 };
 
 export function AppStateProvider({ reducer, children }) {
